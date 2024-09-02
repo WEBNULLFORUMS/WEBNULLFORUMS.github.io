@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, shrink-to-fit=no">
+    <link rel="icon" href="https://static.kundelik.kz/img/icons/favicon_Kz.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300&display=swap">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="main.js"></script>
+    <title>Kundelik Проверка оценок</title>
+    <meta name="theme-color" content="#0273b2">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="description" content="Проверь свою успеваемость!">
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+ 
+    ym(64736353, "init", {
+         clickmap:true,
+         trackLinks:true,
+         accurateTrackBounce:true,
+         webvisor:true
+    });
+ </script>
+ <noscript><div><img src="https://mc.yandex.ru/watch/64736353" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+ <!-- /Yandex.Metrika counter -->
+</head>
+<body>
+    <div class="container">
+        <div class="row menu">
+            <div class="col-12 menu-logo">
+                <img src="img/kundeliklogo.png" width="300px">
+            </div>
+        </div>
+    </div>
+    <form>
+        <div id="new-container" class="container">
+            <div id="main-content" class="row">
+                <div class="col-6 col-md-3 input-main">
+                    <div class="input-main-text">СОР<span class="sub">1</span></div>
+                    <div id="sor_1" class="input">
+                        <input onchange="FOPlan()" id="sor1" type="number" min="0" max="2" placeholder="–" class="input-in" maxlength="2">
+                        <span class="slash-input">/</span>
+                        <input onchange="FOPlan()" id="sor2" type="number" min="0" max="2" placeholder="–" class="input-in" maxlength="2">
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 input-main">
+                    <div class="input-main-text">СОР<span class="sub">2</span></div>
+                    <div id="sor_2" class="input">
+                        <input onchange="FOPlan()" id="sor3" type="number" min="0" max="100" placeholder="–" class="input-in">
+                        <span class="slash-input">/</span>
+                        <input onchange="FOPlan()" id="sor4" type="number" min="0" max="100" placeholder="–" class="input-in">
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 input-main">
+                    <div class="input-main-text">СОР<span class="sub">3</span></div>
+                    <div id="sor_3" class="input">
+                        <input onchange="FOPlan()" id="sor5" type="number" min="0" max="100" placeholder="–" class="input-in">
+                        <span class="slash-input">/</span>
+                        <input onchange="FOPlan()" id="sor6" type="number" min="0" max="100" placeholder="–" class="input-in">
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 input-main">
+                    <div class="input-main-text">СОР<span class="sub">4</span></div>
+                    <div id="sor_4" class="input">
+                        <input onchange="FOPlan()" id="sor7" type="number" min="0" max="100" placeholder="–" class="input-in">
+                        <span class="slash-input">/</span>
+                        <input onchange="FOPlan()" id="sor8" type="number" min="0" max="100" placeholder="–" class="input-in">
+                    </div> 
+                </div>
+            </div>
+            <div class="row new-pln">
+                <div class="col-6 col-md-4 input-main">
+                    <div class="input-main-text">Сумма ФО</div>
+                    <div id="percent-new" class="input">
+                        <input onchange="FOPlan()" id="sum" type="number" min="0" max="1000" placeholder="–" class="input-in-new">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 input-main">
+                    <div class="input-main-text">Кол-во ФО</div>
+                    <div class="input">
+                        <input onchange="FOPlan()" id="quan" type="number" min="0" max="1000" placeholder="–" class="input-in-new">
+                    </div> 
+                </div>
+                <div class="col-12 col-md-4 input-main">
+                    <div class="input-main-text">СОЧ</div>
+                    <div id="soch-new" class="input">
+                        <input onchange="FOPlan()" id="soch1-new" type="number" min="0" max="100" placeholder="–" class="input-in">
+                        <span class="slash-input">/</span>
+                        <input onchange="FOPlan()" id="soch2-new" type="number" min="0" max="100" placeholder="–" class="input-in">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div id="op-one" class="col-6 sor">
+                    <span class="op-text">За 1 ОП: </span>
+                    <input onchange="FOPlan()" id="op-in-new" step="0.1" type="number" min="0" max="50" placeholder="–" class="input-op">
+                    <span class="help-op">%</span>
+                </div>
+                <div id="op-two" hidden class="col-6 sor">
+                    <span class="op-text">За 1 ОП: </span>
+                    <span id="op-out-new">0.0%</span>
+                </div>
+                <div id="soch-one" class="col-6 soch">
+                    <span class="soch-text">% СОЧ: </span>
+                    <input onchange="FOPlan()" id="soch-in-new" step="0.1" type="number" min="0" max="50" placeholder="–" class="input-op">
+                    <span class="help-op">%</span>
+                </div>
+                <div id="soch-two" hidden class="col-6 soch">
+                    <span class="soch-text">% СОЧ: </span>
+                    <span id="soch-out-new">0.0%</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 summa">
+                    <span class="soch-text">% Сумма: </span>
+                    <span id="summa-out-new">0%</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 output">
+                    <span id="output-text-new"></span>   
+                </div>
+            </div>
+        </div>
+    </form>
+    <form>
+        <div hidden id="so-container" class="container">
+            <div id="main-so" class="row">
+                <div class="col-12 input-main">
+                    <div class="input-main-text">Суммативная работа</div>
+                    <div id="so-main" class="input-so">
+                        <input onchange="OneSO()" id="so1" type="number" min="0" max="100" placeholder="–" class="input-in-so">
+                        <span class="slash-input">/</span>
+                        <input onchange="OneSO()" id="so2" type="number" min="0" max="100" placeholder="–" class="input-in-so">
+                    </div> 
+                </div>
+            </div>
+            <div hidden id="output-so-help" class="row">
+                <div id="output-so" class="padd col-12">
+                    При <span class="output-pre-exo" id="output-pre">? %</span> из <span class="output-pre-exo">100%</span> ты получишь оценку <span class="output-pre-exo" id="output-pre-otv">&#129300;</span> за работу.
+                </div>
+            </div>
+        </div>
+    </form>
+    <div hidden id="fo-container" class="container">
+        <div id="main-so" class="row">
+            <div class="col-12 input-main">
+                <div class="input-main-text">Формативная работа</div>
+                <div id="fo-main" class="input-so">
+                    <input onchange="OneFO()" id="fo1" type="number" min="0" max="10" placeholder="–" class="input-in-so">
+                    <span class="slash-input">/</span>
+                    <span class="input-in-fo">10</span>
+                </div> 
+            </div>
+        </div>
+        <div hidden id="output-fo-help" class="row">
+            <div class="col-12 output-fo">
+                <span id="output-fo-one"></span>   
+            </div>
+        </div>
+        <div hidden id="output-fo-help-new" class="row">
+            <div class="col-12 output-fo">
+                <span id="output-fo-three"></span>   
+            </div>
+        </div>
+        <div hidden id="output-fo-two" class="row output-fo-h">
+            <div id="output-fo" class="padd col-12"></div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="row grade">
+            <div class="col-6 left">
+                <div class="all box-fo">
+                    <input onchange="CallOneFO()" type="checkbox" class="custom-checkbox" id="fo-pln" name="fo-pln" value="yes">
+                    <label for="fo-pln">За 1 оценку</label>
+                </div>
+            </div>
+            <div class="col-6 right">
+                <div class="so box">
+                    <input onchange="CallOneSO()" type="checkbox" class="custom-checkbox" id="sor/soch" name="sor/soch" value="yes">
+                    <label for="sor/soch">За 1 СОр</label>
+                </div>
+            </div>
+        <div class="container">
+            <span class="dev-text">Разработано Потапченко Максимом</span><br>
+            <span class="dev-date">2024</span>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,404 @@
+/* 5 => #4b9a25 */
+/* 3 => #f9a23b */
+/* 2 => #ff6666 */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+::-webkit-input-placeholder{
+    color: white;
+}
+:focus::-webkit-input-placeholder{
+    opacity: 0; 
+    transition: opacity 0.3s ease;
+}
+input:active, input:focus{
+    outline: none;
+}
+html{
+    position: relative;
+    min-height: 100%;
+}
+body{
+    background: url(/Kundelik_Check/img/bg.png) repeat;
+    margin-bottom: 60px;
+}
+a:hover{
+    text-decoration: none;
+    color: rgb(230, 230, 230);
+    font-weight: 2px;
+}
+.menu{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.menu-text{
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    white-space: nowrap;
+    vertical-align: sub;
+}
+.input-sores {
+    border-radius: 5px;
+    background-color: #9dcde1;
+    color: #fff;
+    font-weight: 650;
+    width: 140px;
+    text-align: center;
+    margin: auto;
+}
+.input{
+    border-radius: 5px;
+    background-color: #4b9a25;
+    color: #fff;
+    font-weight: 650;
+    width: 140px;
+    text-align: center;
+    margin: auto;
+}
+.input-so{
+    border-radius: 5px;
+    background-color: #4b9a25;
+    color: #fff;
+    font-weight: 650;
+    width: 157.5px;
+    height: 36px;
+    text-align: center;
+    margin: auto;
+    margin-top: 15px;
+}
+.input-in{
+    background: none;
+    border: none;
+    width: 55px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    font-weight: 650;
+    font-family: sans-serif, 'Montserrat';
+}
+.ten-grd{
+    background: none;
+    border: none;
+    font-size: 25px;
+    width: 57px;
+    color: white;
+    text-align: center;
+    margin-left: 10px;
+    font-weight: 650;
+    font-family: sans-serif, 'Montserrat';
+}
+.input-in-new{
+    background: none;
+    border: none;
+    width: 55px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    font-weight: 650;
+    font-family: sans-serif, 'Montserrat';
+}
+.input-in-fo{
+    background: none;
+    border: none;
+    width: 40px;
+    height: 33.75px;
+    font-size: 25px;
+    margin-left: 15px;
+    margin-right: 15px;
+    color: white;
+    text-align: center;
+    font-weight: 650;
+    font-family: sans-serif, 'Montserrat';
+}
+.input-in-so{
+    background: none;
+    border: none;
+    width: 61.87px;
+    height: 33.75px;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    font-weight: 650;
+    font-family: sans-serif, 'Montserrat';
+}
+.input-main-text{
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    white-space: nowrap;
+    text-align: center;
+}
+#so-container{
+    padding-bottom: 150px;
+}
+.input-main{
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.sub{
+    font-size: 11px;
+    margin-left: 2px;
+}
+.slash-input{
+    font-size: 20px;
+}
+.sor{
+    text-align: right;
+    font-size: 20px;
+}
+.soch{
+    text-align: left;
+    font-size: 20px;
+}
+#new-container{
+    margin-top: -15px;
+}
+.output-pre-exo{
+    background-color: #4b9a25;
+    text-align: center;
+    padding: 0.5px 5px;
+    border-radius: 5px;
+    color: white;
+    font-size: 17px;
+    white-space: nowrap;
+}
+.output{
+    text-align: center;
+    margin-top: 15px;
+    font-size: 20px;
+    height: 90px;
+}
+.output-fo{
+    text-align: center;
+    margin-top: 15px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+#output-so{
+    text-align: center;
+    margin-top: 15px;
+    font-size: 20px;
+}
+#fo-container{
+    margin-bottom: 200px;
+}
+.output-fo-h{
+    margin: auto;
+    width: 90%;
+    color: white;
+    border-radius: 5px;
+}
+#output-fo{
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+#output-fo-otv{
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+#output-fo-one{
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+}
+#output-fo-three{
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+}
+.summa{
+    padding-top: 15px;
+    padding-bottom: 5px;
+    text-align: center;
+    font-size: 20px;
+}
+#output-text{
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+}
+#output-text-new{
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+}
+#output-text-so{
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+}
+#main-content{
+    margin-top: -15px;
+}
+.footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 85px;
+    text-align: center;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 20px;
+}
+.dev-text{
+    font-size: 15px;
+}
+.dev-date{
+    font-size: 12px;
+    vertical-align: super;
+}
+.vk{
+    background-color: #4680C2;
+    color: #FFFFFF;
+    border-radius: 5px;
+    width: 201.65px;
+    text-align: center;
+    margin: auto;
+    font-size: 17px;
+    padding: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 2px;
+}
+.vk:hover{
+    color: rgb(230, 230, 230);;
+}
+.vk-grp{
+    text-align: center;
+    padding-bottom: 10px;
+    width: 500px;
+    margin: auto;
+}
+.grade{
+    text-align: center;
+    width: 500px;
+    margin: auto;
+    height: 40px;
+}
+.grade-old{
+    text-align: center;
+    margin: auto;
+    height: 40px;
+}
+.custom-checkbox{
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+.custom-checkbox + label{
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+.custom-checkbox + label::before{
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 2px solid white;
+    border-radius: 3px;
+    margin-right: 10px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+}
+.custom-checkbox:checked + label::before{
+    background-image: linear-gradient(180deg,#00c3e8 0,#00b0e1);
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+}
+.custom-checkbox:not(:disabled):active + label::before{
+    background-color: #8bc1ff;
+}
+.box{
+    background-image: linear-gradient(180deg,#00c3e8 0,#00b0e1);
+    width: 201.65px;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    padding: 5px;
+    border-radius: 4px;
+    height: 30px;
+}
+.box-fo{
+    background-image: linear-gradient(180deg,#00c3e8 0,#00b0e1);
+    width: 201.65px;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    padding: 5px;
+    border-radius: 4px;
+    height: 30px;
+}
+.box-old{
+    background-image: linear-gradient(180deg,#00c3e8 0,#00b0e1);
+    width: 201.65px;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    padding: 5px;
+    border-radius: 4px;
+    height: 30px;
+    margin: auto;
+}
+@media screen and (max-width: 575px){
+    .vk-grp{
+        width: 100%;
+    }
+    .grade{
+        width: 100%;
+        height: 40px;
+    }
+    .box{
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    .box-fo{
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    .left{
+        padding-right: 5px;
+    }
+    .right{
+        padding-left: 5px;
+    }
+    .padd{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+.input-op{
+    width: 50px;
+    height: 27px;
+    font-size: 20px;
+    text-align: center;
+    background: none;
+    border: none;
+    margin-left: -5px;
+}
+input.input-op::placeholder{
+    color: black;
+}
+.help-op{
+    text-align: left;
+    margin-left: -5px;
+}
+input:disabled::placeholder{
+    color: rgba(0, 0, 0, 0);
+}
+input:disabled{
+    background: url(/Kundelik_Check/img/cross.png);
+    background-repeat: no-repeat;
+    background-position: center;
+} 
